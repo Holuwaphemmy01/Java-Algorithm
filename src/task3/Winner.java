@@ -35,10 +35,10 @@ public class Winner {
                 return currentAttacker.getName();
             }
 
-            currentAttacker = defender; // Switch attackers
+            currentAttacker = defender;
             defender = currentAttacker == fighter1 ? fighter2 : fighter1;
         }
 
-        return null; // This should never happen if both fighters have health
+        return null;
     }
 }
