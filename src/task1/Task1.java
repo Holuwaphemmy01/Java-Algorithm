@@ -6,9 +6,7 @@ public class Task1 {
 
     public String getDateAndEvent(String dateAndEvent) {
         String []date = dateAndEvent.split(" ");
-        System.out.println(Arrays.toString(date));
         String []eventDate = date[0].split("-");
-        System.out.println(Arrays.toString(eventDate));
         int day = Integer.parseInt(eventDate[0]);
         int month = Integer.parseInt(eventDate[1]);
         int year = Integer.parseInt(eventDate[2]);
@@ -24,6 +22,6 @@ public class Task1 {
 
     public static void main(String[] args) {
         Task1 task1 = new Task1();
-        System.out.println(task1.getDateAndEvent("41-12-2022 Christmas"));
+        System.out.println(task1.getDateAndEvent("01-12-2022 Christmas"));
     }
 }
